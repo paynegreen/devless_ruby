@@ -7,12 +7,13 @@ Gem::Specification.new do |spec|
   spec.name          = "devless_ruby"
   spec.version       = DevlessRuby::VERSION
   spec.authors       = ["Edwin Tsatsu"]
-  spec.email         = ["tselormey99@gmail.com"]
+  spec.email         = ["tsatsu@devless.io"]
 
   spec.summary       = %q{Devless Ruby SDK}
   spec.description   = %q{Ruby SDK for communicating with the Devless platform}
   spec.homepage      = "https://devless.io"
   spec.license       = "MIT"
+  spec.post_install_message = "Thanks for choosing Devless.\nYou may read full API docs at https://docs.devless.io"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
@@ -32,4 +33,5 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.13"
   spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_dependency             "http", "~> 2.0"
 end
