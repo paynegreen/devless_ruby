@@ -62,7 +62,7 @@ module DevlessRuby
     payload = {:jsonrpc => "2.0", :method => service, :id => get_id, :params => params}
     res = @origin.post(base_url, :json => payload)
 
-    return res
+    return res.to_json
   end
 
 end
